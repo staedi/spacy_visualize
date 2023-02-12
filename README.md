@@ -10,7 +10,7 @@ You can try [here](https://share.streamlit.io/staedi/spacy_visualize/main/app.py
 
 [<img src="https://github.com/staedi/spacy_visualize/raw/main/images/interface.png" width="750" />](https://github.com/staedi/spacy_visualize/raw/main/images/interface.png)
 
-The dashboard has the classic two-side design. Options to choose on the left **sidebar** and the results on the right-side **main** page.
+The dashboard has the classic two-side design. Options to choose from on the left **sidebar** and the results on the right-side **main** page.
 
 
 ## Usage
