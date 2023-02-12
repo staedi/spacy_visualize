@@ -8,7 +8,9 @@ You can try [here](https://share.streamlit.io/staedi/spacy_visualize/main/app.py
 ## Usage
 
 ### Upload file to analyze
-Firstly, upload a text file (`.txt`) to analyze. For simplicity, the file should not have more than two columns or delimiters. Header (if exists) will become the first row.
+Firstly, upload a text file (`.txt`) to analyze. For simplicity, the file **SHOULD** have single column. Header (if exists) will become the first row.
+
+Before a file is uploaded, the default file provided will be used instead.
 
 ![](https://github.com/staedi/spacy_visualize/raw/main/images/upload.png)
 
