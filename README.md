@@ -5,6 +5,14 @@
 Visualization of keywords on texts using `spacy-streamlit` on [Streamlit](https://www.streamlit.io) module .
 You can try [here](https://share.streamlit.io/staedi/spacy_visualize/main/app.py).
 
+
+## Overall interface
+
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/interface.png" width="750" />](https://github.com/staedi/spacy_visualize/raw/main/images/interface.png)
+
+The dashboard has the classic two-side design. Options to choose on the left **sidebar** and the results on the right-side **main** page.
+
+
 ## Usage
 
 ### Upload file to analyze
