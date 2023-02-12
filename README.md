@@ -12,7 +12,7 @@ Firstly, upload a text file (`.txt`) to analyze. For simplicity, the file **SHOU
 
 Before a file is uploaded, the default file provided will be used instead.
 
-[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/upload.png" width="400" />](https://github.com/staedi/spacy_visualize/raw/main/images/upload.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/upload.png" width="350" />](https://github.com/staedi/spacy_visualize/raw/main/images/upload.png)
 
 ### Enter Keywords
 Keywords search allows AND and/or OR operation.
@@ -33,13 +33,13 @@ OR
 
 Be sure to type **Enter** after completing the keywords in the text box.
 
-[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/keywords-textbox.png" width="400" />](https://github.com/staedi/spacy_visualize/raw/main/images/keywords-textbox.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/keywords-textbox.png" width="350" />](https://github.com/staedi/spacy_visualize/raw/main/images/keywords-textbox.png)
 
 ### (Optional)Restrict Keywords
 Once the keywords are entered, groups of search terms are constructed and shown below.
 If you like, you may unselect certain keyword from each group.
 
-[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/keywords-entered.png" width="400" />](https://github.com/staedi/spacy_visualize/raw/main/images/keywords-entered.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/keywords-entered.png" width="350" />](https://github.com/staedi/spacy_visualize/raw/main/images/keywords-entered.png)
 
 ### Select Article
 Once the entered search terms are processed (articles containing those terms are searched), the bottom `selectbox` populates available article to parse (Initially, set to ***None***).
@@ -47,7 +47,7 @@ Select an article you want to parse.
 
 Be advised that once selected, the `selectbox` turns back to **None**, which is normal.
 
-[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/selectbox.png" width="400" />](https://github.com/staedi/spacy_visualize/raw/main/images/selectbox.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/selectbox.png" width="350" />](https://github.com/staedi/spacy_visualize/raw/main/images/selectbox.png)
 
 ## Parsing features
 
@@ -57,4 +57,4 @@ Basically, this visualization aims at highlighting keywords in the article. Foun
 ### Company
 Additionally, pre-populated names or relevant services or products of companies are higlighted as well. They are labelled with their **ticker** in the ***US*** (`NYSE`, `NASDAQ`) or ***KR*** (`KOSPI`, `KOSDAQ`) markets.
 
-![](https://github.com/staedi/spacy_visualize/raw/main/images/text.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/text.png" width="400" />](https://github.com/staedi/spacy_visualize/raw/main/images/text.png)
