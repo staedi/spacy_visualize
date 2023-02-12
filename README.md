@@ -57,4 +57,4 @@ Basically, this visualization aims at highlighting keywords in the article. Foun
 ### Company
 Additionally, pre-populated names or relevant services or products of companies are higlighted as well. They are labelled with their **ticker** in the ***US*** (`NYSE`, `NASDAQ`) or ***KR*** (`KOSPI`, `KOSDAQ`) markets.
 
-[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/text.png" width="650" />](https://github.com/staedi/spacy_visualize/raw/main/images/text.png)
+[<img src="https://github.com/staedi/spacy_visualize/raw/main/images/text.png" width="750" />](https://github.com/staedi/spacy_visualize/raw/main/images/text.png)
