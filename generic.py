@@ -153,7 +153,7 @@ def filter_text(keywords):
                 df = reduce(lambda left,right: pd.merge(left,right), dfs)
                 processed_data = pd.concat([processed_data,df])
 
-            processed_data = processed_data.reset_index(drop=True)
+            processed_data = processed_data.drop_duplicates().reset_index(drop=True)
             # Update session data        
             update_session(session_key='data',key='filtered',value=processed_data)
 
