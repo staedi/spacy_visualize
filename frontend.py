@@ -70,7 +70,7 @@ def display_sidebar():
 
 def display_spacy(doc,labels):
     colors = ['#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f']
-    symbol_cnt = len([label.lower().find('group')==-1 for label in labels])-1
+    symbol_cnt = len(list(filter(lambda label:label.lower().find('group')==-1,labels)))-1
     colors_dict = {label:colors[0] if label.lower().find('group')==-1 else colors[label_idx-symbol_cnt+1] for label_idx, label in enumerate(labels)}
 
     spacy_streamlit.visualize_ner(doc=doc,labels=labels,colors=colors_dict,show_table=False,title='',manual=True)
