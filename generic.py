@@ -193,8 +193,8 @@ def match_pattern(text_dict,keywords,symbol_dict):
     key_spans = sorted(set([span.span() for spans in key_re_spans for span in spans]))
 
     # Symbols
-    symbol_pre_spans = {symbol:set(filter(lambda x:len(list(re.finditer(rf"\b{x.lower()}(\.?)\b",text.lower()) if region != 'KR' else re.finditer(rf"\b{x.lower()}(\w?)\b",text.lower())))>0,summary)) for symbol,summary in symbol_dict.items()}
-    symbol_re_spans = {symbol:set(map(lambda x:re.finditer(rf"\b{x.lower()}(\.?)\b",text.lower()) if region != 'KR' else re.finditer(rf"\b{x.lower()}(\w?)\b",text.lower()) ,summary)) for symbol,summary in symbol_pre_spans.items()}
+    symbol_pre_spans = {symbol:set(filter(lambda x:len(list(re.finditer(rf"\b{x.lower()}(\W?)\b",text.lower()) if region != 'KR' else re.finditer(rf"\b{x.lower()}(\w?)\b",text.lower())))>0,summary)) for symbol,summary in symbol_dict.items()}
+    symbol_re_spans = {symbol:set(map(lambda x:re.finditer(rf"\b{x.lower()}(\W?)\b",text.lower()) if region != 'KR' else re.finditer(rf"\b{x.lower()}(\w?)\b",text.lower()) ,summary)) for symbol,summary in symbol_pre_spans.items()}
     symbol_re_spans = {symbol:spans for symbol,spans in symbol_re_spans.items() if len(spans)>0}
     symbol_spans = {symbol:sorted(set([span.span() for spans in summary for span in spans if span.span() not in key_spans])) for symbol,summary in symbol_re_spans.items()}
 
