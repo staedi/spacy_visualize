@@ -84,8 +84,9 @@ def process_iterator(iter_obj,page_num,groups):
         generic.update_session(session_key='page',value=page_num)
         sel_text, symbol_dict = generic.extract_text(line,groups)
         doc, labels = generic.process_displayc(sel_text,groups,symbol_dict)
-        sel_text['symbol'] = [symbol for symbol in labels if symbol.lower().find('group')==-1]
-        sel_text['name'] = st.session_state.data['quotes'].loc[st.session_state.data['quotes']['symbol'].isin(sel_text['symbol']),'name'].tolist()
+        sel_text['symbol'], sel_text['name'] = st.session_state.data['quotes'].loc[st.session_state.data['quotes']['symbol'].isin(symbol_list),['symbol','name']].to_dict('list').values()
+        # sel_text['symbol'] = [symbol for symbol in labels if symbol.lower().find('group')==-1]
+        # sel_text['name'] = st.session_state.data['quotes'].loc[st.session_state.data['quotes']['symbol'].isin(sel_text['symbol']),'name'].tolist()
         show_table(sel_text)
         display_spacy(doc,labels)
 
